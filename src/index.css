@@ -26,6 +26,10 @@
     --accent-gold-light: 48 100% 67%;
     --accent-navy-light: 210 75% 35%;
     
+    /* Legacy accent colors for components */
+    --accent-blue: 210 100% 75%;
+    --accent-purple: 45 100% 51%;
+    
     /* Professional Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
     --gradient-accent: linear-gradient(135deg, hsl(var(--accent-gold)) 0%, hsl(var(--accent-gold-light)) 100%);

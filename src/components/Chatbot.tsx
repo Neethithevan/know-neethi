@@ -128,7 +128,7 @@ const Chatbot = () => {
       {/* Chat Toggle Button */}
       <Button
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-lg bg-gradient-to-r from-accent-blue to-accent-purple hover:from-accent-blue/90 hover:to-accent-purple/90 transition-all duration-300 z-50 ${
+        className={`fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-elegant bg-gradient-to-r from-primary to-accent hover:from-primary-light hover:to-accent/90 transition-all duration-300 z-50 ${
           isOpen ? "hidden" : "flex"
         } items-center justify-center`}
       >
@@ -139,7 +139,7 @@ const Chatbot = () => {
       <Card className={`fixed bottom-6 right-6 w-96 h-[500px] shadow-2xl z-50 transition-all duration-300 ${
         isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       } bg-card/95 backdrop-blur-md border-0`}>
-        <CardHeader className="pb-3 bg-gradient-to-r from-accent-blue to-accent-purple text-white rounded-t-lg">
+        <CardHeader className="pb-3 bg-gradient-to-r from-primary to-accent text-white rounded-t-lg shadow-elegant">
           <div className="flex items-center justify-between">
             <CardTitle className="text-lg flex items-center gap-2">
               <Bot className="h-5 w-5" />
@@ -165,16 +165,16 @@ const Chatbot = () => {
                 className={`flex gap-3 ${message.isBot ? "justify-start" : "justify-end"}`}
               >
                 {message.isBot && (
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-accent-blue to-accent-purple flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center flex-shrink-0 shadow-card">
                     <Bot className="h-4 w-4 text-white" />
                   </div>
                 )}
                 
                 <div
-                  className={`max-w-[75%] p-3 rounded-lg text-sm ${
+                  className={`max-w-[75%] p-3 rounded-lg text-sm shadow-card ${
                     message.isBot
-                      ? "bg-muted text-foreground"
-                      : "bg-gradient-to-r from-accent-blue to-accent-purple text-white"
+                      ? "bg-muted text-foreground border border-border"
+                      : "bg-gradient-to-r from-primary to-accent text-white"
                   }`}
                 >
                   {message.text}
@@ -190,7 +190,7 @@ const Chatbot = () => {
             
             {isTyping && (
               <div className="flex gap-3 justify-start">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-accent-blue to-accent-purple flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center flex-shrink-0 shadow-card">
                   <Bot className="h-4 w-4 text-white" />
                 </div>
                 <div className="bg-muted text-foreground p-3 rounded-lg">
@@ -218,7 +218,7 @@ const Chatbot = () => {
               <Button
                 onClick={handleSendMessage}
                 disabled={!inputValue.trim() || isTyping}
-                className="bg-gradient-to-r from-accent-blue to-accent-purple hover:from-accent-blue/90 hover:to-accent-purple/90"
+                className="bg-gradient-to-r from-primary to-accent hover:from-primary-light hover:to-accent/90 shadow-card"
               >
                 <Send className="h-4 w-4" />
               </Button>
