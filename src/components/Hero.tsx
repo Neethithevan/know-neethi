@@ -25,54 +25,57 @@ const Hero = () => {
           {/* Profile Image Placeholder */}
           <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-glow">
             <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-4xl font-bold text-primary">
-              JD
+              NT
             </div>
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-transparent drop-shadow-lg">
-            John Doe
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-white drop-shadow-lg">
+            Neethi Thevan
           </h1>
-          
-          <p className="text-xl md:text-2xl text-foreground font-semibold mb-4 drop-shadow-md">
-            Full Stack Developer & UI/UX Designer
+
+          <p className="text-xl md:text-2xl text-white font-semibold mb-4 drop-shadow-md">
+            AI , Data and Cloud Engineer
           </p>
-          
-          <p className="text-lg text-foreground/90 max-w-2xl mx-auto mb-8 leading-relaxed drop-shadow-sm">
-            Passionate about creating beautiful, functional digital experiences. 
-            I specialize in modern web technologies and love turning complex problems into simple, elegant solutions.
+
+          <p className="text-lg text-white max-w-2xl mx-auto mb-8 leading-relaxed drop-shadow-sm">
+            I am passionate about building stuff that matters.<br />
+            I specialize in AI, Data and Cloud technologies to create innovative solutions that drive success.
           </p>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary-light transition-all duration-300 shadow-lg hover:shadow-xl">
-              View My Work
-              <ArrowDown className="ml-2 h-4 w-4" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-              Download Resume
-            </Button>
+            {/* View My Work Button */}
+            <a href="#projects" className="flex items-center">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary-light transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                View My Work
+                <ArrowDown className="ml-2 h-4 w-4" />
+              </Button>
+            </a>
           </div>
           
           {/* Social Links */}
           <div className="flex justify-center gap-6">
-            <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group">
+            <a href="https://github.com/Neethithevan" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group">
               <Github className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
-            <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group">
+            <a href="https://www.linkedin.com/in/neethi-thangiah/" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group">
               <Linkedin className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
-            <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group">
+            <a href="mailto:contact@neethithevan.com" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group">
               <Mail className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
           </div>
         </div>
       </div>
       
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-6 w-6 text-muted-foreground" />
-      </div>
+      </div> */}
     </section>
   );
 };
