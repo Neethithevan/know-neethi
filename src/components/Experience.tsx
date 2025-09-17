@@ -5,40 +5,31 @@ import { Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      company: "TechCorp Solutions",
-      position: "Senior Full Stack Developer",
-      location: "San Francisco, CA",
-      duration: "2022 - Present",
-      description: "Led a team of 5 developers in building scalable web applications. Implemented microservices architecture and improved system performance by 40%.",
-      skills: ["React", "Node.js", "AWS", "Docker", "PostgreSQL"],
+      company: "Enlitic, Inc.",
+      position: "Machine Learning Engineer",
+      location: "Fort Collins, CO",
+      duration: "June 2023 - Jan 2024",
+      description: "Implemented DataOps pipelines using AWS services to streamline data processing and model deployment. Led the migration of legacy systems to cloud-based solutions, improving scalability and reliability.",
+      skills: ["Python", "SQL", "Spark", "Data Warehouse", "Docker", "DevOps", "Terraform","AWS (S3, Lambda, Glue, Step Functions, Athena)"],
       type: "Full-time"
     },
     {
-      company: "StartupXYZ",
-      position: "Frontend Developer",
+      company: "Enlitic, Inc.",
+      position: "Data Scientist",
       location: "Remote",
-      duration: "2020 - 2022",
-      description: "Developed responsive web applications using React and TypeScript. Collaborated with UX designers to create intuitive user interfaces.",
-      skills: ["React", "TypeScript", "Tailwind CSS", "Jest", "Figma"],
+      duration: "June 2022 - May 2023",
+      description: "Build tools and frameworks to support ML model development and deployment.",
+      skills: ["Python", "SQL", "PyTorch", "HTML+CSS+Flask", "ECS", "Flask API", "GRPC"],
       type: "Full-time"
     },
     {
-      company: "Digital Agency Co.",
-      position: "Web Developer",
-      location: "New York, NY", 
+      company: "Fellowship.AI.",
+      position: "Machine Learning Intern",
+      location: "Boulder, CO", 
       duration: "2019 - 2020",
-      description: "Built custom websites and web applications for clients across various industries. Focused on performance optimization and SEO best practices.",
-      skills: ["JavaScript", "PHP", "WordPress", "MySQL", "HTML/CSS"],
-      type: "Full-time"
-    },
-    {
-      company: "Freelance",
-      position: "Full Stack Developer", 
-      location: "Remote",
-      duration: "2018 - 2019",
-      description: "Worked with various clients to deliver custom web solutions. Managed projects from conception to deployment.",
-      skills: ["JavaScript", "React", "Node.js", "MongoDB", "Express"],
-      type: "Freelance"
+      description: "R&D work to extend a pose estimation model to work on videos.",
+      skills: ["Python", "R", "OpenCV", "Keras", "MediaPipe"],
+      type: "Intern"
     }
   ];
 
@@ -50,7 +41,7 @@ const Experience = () => {
             Work Experience
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            My professional journey in software development, showcasing growth and expertise across different roles and technologies.
+            My professional journey in AI & Cloud space, showcasing growth and expertise across different roles and technologies.
           </p>
         </div>
 

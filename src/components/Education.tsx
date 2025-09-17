@@ -5,54 +5,55 @@ import { GraduationCap, Award, Calendar } from "lucide-react";
 const Education = () => {
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      location: "San Francisco, CA",
-      duration: "2015 - 2019",
-      gpa: "3.8/4.0",
-      description: "Focused on software engineering, algorithms, and data structures. Completed senior capstone project on machine learning applications.",
-      achievements: ["Dean's List", "Computer Science Honor Society", "Outstanding Senior Project Award"],
+      degree: "Master of Science in Data Science",
+      institution: "University of Colorado Boulder",
+      location: "Boulder, CO",
+      duration: "2021 - 2023",
+      gpa: "3.95/4.0",
+      description: "Focused on statistics , machine learning (NLP & CV), data engineering, and big data technologies",
+      achievements: [],
       courses: ["Data Structures", "Algorithms", "Database Systems", "Software Engineering", "Machine Learning"]
     },
     {
-      degree: "Associate Degree in Web Development",
-      institution: "Community College of Design",
-      location: "Los Angeles, CA",
-      duration: "2013 - 2015",
-      gpa: "3.9/4.0",
-      description: "Comprehensive program covering front-end and back-end web development technologies with hands-on project experience.",
-      achievements: ["Valedictorian", "Web Development Excellence Award"],
-      courses: ["HTML/CSS", "JavaScript", "PHP", "MySQL", "Web Design"]
+      degree: "Bachelor of Technology in Mechanical Engineering",
+      institution: "Amrita Vishwa Vidyapeetham",
+      location: "Bangalore, India",
+      duration: "2016 - 2020",
+      gpa: "8.4/10",
+      description: "Studied core engineering principles in thermodynamics, fluid mechanics, and materials science.",
+      courses: ["Thermodynamics", "Fluid Mechanics", "Control Systems", "Matlab"]
     }
   ];
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect",
+      name: "AWS Certified Data Engineer - Associate",
       issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-CSA-2023-001"
+      date: "2025",
+      credentialUrl: "https://www.credly.com/badges/6f2074ae-fa07-4061-a4e9-7bf97643fd0e/linked_in_profile"
+    },
+     {
+      name: "AWS Certified Cloud Practitioner -  Foundation",
+      issuer: "Amazon Web Services",
+      date: "2025",
+      credentialUrl : "https://www.credly.com/earner/earned/badge/75acdfa3-299d-4910-bcaf-dee297eb6922"
     },
     {
-      name: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2022",
-      credentialId: "GCP-PD-2022-015"
+      name: "Datadog - Configuration Learning Path",
+      issuer: "Datadog",
+      date: "2025",
+      credentialUrl : "https://www.credly.com/earner/earned/badge/e166ab5d-2b9e-4c27-a3c8-17ac01e50c22"
     },
-    {
-      name: "React Developer Certification",
-      issuer: "Meta",
-      date: "2021",
-      credentialId: "META-RC-2021-089"
-    }
+
+    
   ];
 
   return (
     <section id="education" className="py-20 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent-emerald bg-clip-text text-transparent">
-            Education & Certifications
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent-purple bg-clip-text text-transparent">
+              Work Experience
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             My academic background and professional certifications that form the foundation of my technical expertise.
@@ -93,7 +94,7 @@ const Education = () => {
                       {edu.description}
                     </p>
                     
-                    <div>
+                    {/* <div>
                       <h4 className="font-semibold mb-2 text-primary">Key Achievements:</h4>
                       <div className="flex flex-wrap gap-2">
                         {edu.achievements.map((achievement, achievementIndex) => (
@@ -102,7 +103,7 @@ const Education = () => {
                           </Badge>
                         ))}
                       </div>
-                    </div>
+                    </div> */}
                     
                     <div>
                       <h4 className="font-semibold mb-2 text-primary">Relevant Coursework:</h4>
@@ -124,7 +125,7 @@ const Education = () => {
           <div>
             <h3 className="text-2xl font-bold mb-8 text-primary flex items-center gap-3">
               <Award className="h-7 w-7" />
-              Professional Certifications
+              Certifications
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -144,7 +145,14 @@ const Education = () => {
                         </p>
                         <div className="text-xs text-muted-foreground">
                           <p>Issued: {cert.date}</p>
-                          <p className="font-mono">ID: {cert.credentialId}</p>
+                          <a
+                            href={cert.credentialUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mt-1 px-2 py-1 text-xs font-semibold text-primary bg-primary/10 rounded hover:bg-primary/20 transition-colors"
+                          >
+                            Verify
+                          </a>
                         </div>
                       </div>
                     </div>

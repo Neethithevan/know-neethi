@@ -9,19 +9,19 @@ const Connections = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com"
+      value: "contact@neethithevan.com",
+      href: "mailto:contact@neethithevan.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+1 (720) (761-3558) ",
+      href: "tel:+17207613558"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Seattle, Washington, USA",
       href: "#"
     }
   ];
@@ -30,21 +30,15 @@ const Connections = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/johndoe",
+      href: "https://www.linkedin.com/in/neethi-thangiah/",
       color: "hover:text-blue-600"
     },
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/johndoe",
+      href: "https://github.com/Neethithevan",
       color: "hover:text-gray-900"
     },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/johndoe",
-      color: "hover:text-blue-400"
-    }
   ];
 
   return (
@@ -120,7 +114,7 @@ const Connections = () => {
                       First Name
                     </label>
                     <Input 
-                      placeholder="John" 
+                      placeholder="Neethi" 
                       className="border-border focus:border-primary transition-colors"
                     />
                   </div>
@@ -129,7 +123,7 @@ const Connections = () => {
                       Last Name
                     </label>
                     <Input 
-                      placeholder="Doe" 
+                      placeholder="Thevan" 
                       className="border-border focus:border-primary transition-colors"
                     />
                   </div>
@@ -141,7 +135,7 @@ const Connections = () => {
                   </label>
                   <Input 
                     type="email" 
-                    placeholder="john@example.com" 
+                    placeholder="email@example.com" 
                     className="border-border focus:border-primary transition-colors"
                   />
                 </div>

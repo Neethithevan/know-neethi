@@ -6,36 +6,36 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-      githubUrl: "#",
+      title: "Deploying a React WebApp with Chatbot Integration",
+      description: "Developed this current portfolio website using React and integrated a chatbot for enhanced user interaction.",
+      image: "src/assets/react-protofolio-with-chatbot.png",
+      technologies: ["React", "Node.js", "TypeScript", "Tailwind CSS", "AWS", "DevOps"],
+      githubUrl: "https://github.com/Neethithevan/know-neethi",
       liveUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "/placeholder.svg", 
-      technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io", "Framer Motion"],
-      githubUrl: "#",
+      title: "Crypto-Gamble: Real-time Meme Coin Analytics Dashboard",
+      description: "Built a real-time analytics dashboard for meme coins using Airflow, Kafka, Flink , Postgress and Garfnana to provide users with up-to-date market insights and trends.",
+      image: "src/assets/crypto-gamble-project.png",
+      technologies: ["Airflow", "Kafka", "Flink", "PostgreSQL", "Grafana", "Docker", "Kubernetes"],
+      githubUrl: "https://github.com/Neethithevan/crypto_gamble",
       liveUrl: "#"
     },
     {
-      title: "AI Content Generator",
-      description: "An AI-powered content generation platform that helps create blog posts, social media content, and marketing copy using OpenAI's API.",
-      image: "/placeholder.svg",
-      technologies: ["React", "OpenAI API", "Express.js", "MongoDB", "Redux"],
-      githubUrl: "#",
-      liveUrl: "#"
-    }
+      title: "Hosting Static Website on AWS with CI/CD",
+      description: "Hosted a static website on AWS using S3 and CloudFront, implementing CI/CD pipelines with GitHub Actions for automated deployments. Used terraform to provison the infrastructure.",
+      image: "src/assets/static-webapp-project.png", 
+      technologies: ["HTML", "CSS", "JavaScript", "AWS S3", "CloudFront", "GitHub Actions", "Terraform"],
+      githubUrl: "https://github.com/Neethithevan/portfolio_website",
+      liveUrl: "https://neethithevan.com"
+    },
   ];
 
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent-blue bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent-purple bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
