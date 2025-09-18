@@ -44,8 +44,12 @@ const Index = () => {
         <Connections />
       </main>
 
-      {/* Chatbot */}
-      <Chatbot />
+      Chatbot
+      <div id="chatbot" className="fixed bottom-6 right-6 z-50">
+        <Chatbot />
+      </div>
+
+      
     </div>
   );
 };

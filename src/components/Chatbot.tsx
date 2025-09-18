@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { MessageCircle, Send, X, User, Bot } from "lucide-react";
+import { MessageCircle, Send, X, User, Bot, Minus } from "lucide-react";
 
 interface Message {
   id: string;
@@ -13,6 +13,7 @@ interface Message {
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
@@ -127,7 +128,9 @@ const Chatbot = () => {
     <>
       {/* Chat Toggle Button */}
       <Button
-        onClick={() => setIsOpen(true)}
+        onClick={() => {
+          setIsOpen(true); 
+          setIsMinimized(false);}}
         className={`fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-elegant bg-gradient-to-r from-primary to-accent hover:from-primary-light hover:to-accent/90 transition-all duration-300 z-50 ${
           isOpen ? "hidden" : "flex"
         } items-center justify-center`}
@@ -147,14 +150,29 @@ const Chatbot = () => {
             <Bot className="h-5 w-5" />
             Neethi's AI Assistant
           </CardTitle>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setIsOpen(false)}
-            className="text-white hover:bg-white/20 h-8 w-8 p-0"
-          >
-            <X className="h-4 w-4" />
-          </Button>
+          <div className="flex items-center gap-2">
+            {/* Minimize Button */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => {
+                setIsMinimized(true);
+                setIsOpen(false);
+              }}
+              className="text-white hover:bg-white/20 h-8 w-8 p-0"
+            >
+              <Minus className="h-4 w-4" />
+            </Button>
+            {/* Close Button */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsOpen(false)}
+              className="text-white hover:bg-white/20 h-8 w-8 p-0"
+            >
+              <X className="h-4 w-4" />
+            </Button>
+          </div>
         </div>
       </CardHeader>
 
