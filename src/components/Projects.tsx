@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { assert } from "console";
 
 const Projects = () => {
@@ -79,13 +80,17 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="flex-1 group/btn border-primary/20 hover:border-primary">
-                    <Github className="h-4 w-4 mr-2 group-hover/btn:text-primary transition-colors" />
-                    Code
+                  <Button asChild variant="outline" size="sm" className="flex-1 border-primary/20 text-primary hover:border-primary hover:text-primary hover:bg-background">
+                    <Link href={project.githubUrl} >
+                      <Github className="h-4 w-4 mr-2 group-hover/btn:text-primary transition-colors" />
+                      Code
+                    </Link>
                   </Button>
-                  <Button size="sm" className="flex-1 bg-gradient-to-r from-accent-blue to-accent-purple hover:from-accent-blue/90 hover:to-accent-purple/90">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
+                  <Button asChild size="sm" className="flex-1 bg-gradient-to-r from-accent-blue to-accent-purple hover:from-accent-blue/90 hover:to-accent-purple/90">
+                    <Link href={project.liveUrl} >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Live Demo
+                    </Link>
                   </Button>
                 </div>
               </CardContent>
