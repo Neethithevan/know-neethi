@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src={heroBg} 
+        <Image 
+          src="/images/hero-bg.jpg" 
           alt="Professional developer workspace"
-          className="w-full h-full object-cover"
+          fill
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-accent/30" />
       </div>
@@ -45,8 +45,7 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            {/* View My Work Button */}
-            <a href="#projects" className="flex items-center">
+            <a href="#projects" className="mx-auto sm:mx-0">
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary-light transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -56,7 +55,6 @@ const Hero = () => {
               </Button>
             </a>
           </div>
-          
           {/* Social Links */}
           <div className="flex justify-center gap-6">
             <a href="https://github.com/Neethithevan" className="p-3 rounded-full bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group">

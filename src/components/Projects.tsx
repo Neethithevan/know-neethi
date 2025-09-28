@@ -2,13 +2,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
+import { assert } from "console";
 
 const Projects = () => {
   const projects = [
     {
       title: "Deploying a React WebApp with Chatbot Integration",
       description: "Developed this current portfolio website using React and integrated a chatbot for enhanced user interaction.",
-      image: "src/assets/react-protofolio-with-chatbot.png",
+      image: "/images/react-protofolio-with-chatbot.png",
       technologies: ["React", "Node.js", "TypeScript", "Tailwind CSS", "AWS", "DevOps"],
       githubUrl: "https://github.com/Neethithevan/know-neethi",
       liveUrl: "#"
@@ -16,7 +18,7 @@ const Projects = () => {
     {
       title: "Crypto-Gamble: Real-time Meme Coin Analytics Dashboard",
       description: "Built a real-time analytics dashboard for meme coins using Airflow, Kafka, Flink , Postgress and Garfnana to provide users with up-to-date market insights and trends.",
-      image: "src/assets/crypto-gamble-project.png",
+      image: "/images/crypto-gamble-project.png",
       technologies: ["Airflow", "Kafka", "Flink", "PostgreSQL", "Grafana", "Docker", "Kubernetes"],
       githubUrl: "https://github.com/Neethithevan/crypto_gamble",
       liveUrl: "#"
@@ -24,7 +26,7 @@ const Projects = () => {
     {
       title: "Hosting Static Website on AWS with CI/CD",
       description: "Hosted a static website on AWS using S3 and CloudFront, implementing CI/CD pipelines with GitHub Actions for automated deployments. Used terraform to provison the infrastructure.",
-      image: "src/assets/static-webapp-project.png", 
+      image: "/images/static-webapp-project.png", 
       technologies: ["HTML", "CSS", "JavaScript", "AWS S3", "CloudFront", "GitHub Actions", "Terraform"],
       githubUrl: "https://github.com/Neethithevan/portfolio_website",
       liveUrl: "https://neethithevan.com"
@@ -48,9 +50,11 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-500 border-0 shadow-card bg-card/80 backdrop-blur-sm hover:-translate-y-2">
               <div className="relative overflow-hidden rounded-t-lg">
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.title}
+                  width = {400}
+                  height = {200}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
