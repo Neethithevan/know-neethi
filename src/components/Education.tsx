@@ -32,7 +32,7 @@ const Education = () => {
       date: "2025",
       credentialUrl: "https://www.credly.com/badges/6f2074ae-fa07-4061-a4e9-7bf97643fd0e/linked_in_profile"
     },
-     {
+    {
       name: "AWS Certified Cloud Practitioner -  Foundation",
       issuer: "Amazon Web Services",
       date: "2025",

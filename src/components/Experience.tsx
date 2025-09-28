@@ -10,7 +10,8 @@ const Experience = () => {
       location: "Fort Collins, CO",
       duration: "June 2023 - Jan 2024",
       description: "Implemented DataOps pipelines using AWS services to streamline data processing and model deployment. Led the migration of legacy systems to cloud-based solutions, improving scalability and reliability.",
-      skills: ["Python", "SQL", "Spark", "Data Warehouse", "Docker", "DevOps", "Terraform","AWS (S3, Lambda, Glue, Step Functions, Athena)"],
+      skills: ["Python", "SQL", "Spark", "DICOM", "PyTorch", "Computer Vison", "NLP",
+        "Data Warehouse", "Docker", "DevOps", "Terraform","AWS (S3, Lambda, Glue, Step Functions, Athena)", "CI/CD"],
       type: "Full-time"
     },
     {
@@ -19,7 +20,7 @@ const Experience = () => {
       location: "Remote",
       duration: "June 2022 - May 2023",
       description: "Build tools and frameworks to support ML model development and deployment.",
-      skills: ["Python", "SQL", "PyTorch", "HTML+CSS+Flask", "ECS", "Flask API", "GRPC"],
+      skills: ["Python", "SQL", "PyTorch", "Docker", "AWS", "MLOps", "Flask App", "ECS", "Flask API", "GRPC"],
       type: "Full-time"
     },
     {
